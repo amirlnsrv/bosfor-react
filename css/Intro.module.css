@@ -1,0 +1,49 @@
+.intro {
+  background: url("public/Intro.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 840px;
+  height: 100vh;
+  position: relative;
+  right: 0;
+  left: 0;
+  top: -100px;
+  z-index: 1;
+}
+
+.introInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px 0 0 0;
+}
+
+.introInnerLeftTitle {
+  text-transform: uppercase;
+  color: #00054a;
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.introInnerLeftTitle span {
+  color: #003185;
+  font-style: italic;
+  font-size: 124px;
+}
+
+.introInnerLeftSubtext {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 35px;
+  color: #00054a;
+  margin-bottom: 20px;
+}
+
+.introInnerRight {
+  text-transform: uppercase;
+  color: #00054a;
+  font-size: 56px;
+  font-weight: 900;
+}

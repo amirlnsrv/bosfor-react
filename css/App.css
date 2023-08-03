@@ -1,0 +1,21 @@
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background-color: white;
+  color: #01c3f8;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  padding-top: 25px;
+}
+
+.Intro {
+  background: url("public/Intro.webp") center no-repeat;
+  position: absolute;
+}

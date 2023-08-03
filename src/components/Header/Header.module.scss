@@ -1,0 +1,134 @@
+.headerInner {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerLogo {
+	display: flex;
+	align-items: flex-end;
+}
+.headerLogo img {
+	width: 100px;
+}
+.headerLogoText {
+	color: #01c3f8;
+	margin-left: -10px;
+	line-height: 1;
+}
+.headerLogoTitle {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-style: italic;
+}
+.headerLogoSubtitle {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 300;
+	color: #9a9e9e;
+}
+.headerNav {
+	display: flex;
+	align-items: center;
+}
+.headerLocation {
+	display: flex;
+	align-items: center;
+	font-size: 23px;
+}
+.headerLocationIco svg {
+	margin-right: 5px;
+	color: #2c2d2f;
+}
+.headerLocationTitle {
+	font-weight: 900;
+}
+.headerLocation a {
+	color: #01c3f8;
+}
+
+.headerContacts {
+	margin: 0 100px 0 40px;
+	position: relative;
+}
+.headerContactsIco svg {
+	color: #2c2d2f;
+	font-size: 23px;
+	position: absolute;
+	top: 16px;
+	margin-left: -25px;
+}
+.headerContactsItem {
+	line-height: 1.3;
+	font-weight: 900;
+	font-size: 23px;
+}
+.headerContactsItem a {
+	color: #01c3f8;
+}
+.headerBurger {
+	position: absolute;
+	right: 0;
+	padding: 11px 10px 5px;
+	border-radius: 250px;
+	font-size: 40px;
+	color: #fff;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+	transition: background 0.1s ease-in-out;
+}
+.headerBurger:hover {
+	background: #2c2d2f;
+}
+
+@media screen and (max-width: 991px) {
+	.headerInner {
+		flex-wrap: wrap;
+	}
+	.headerLogo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.headerNav {
+		width: 100%;
+		margin-top: 20px;
+		justify-content: space-between;
+	}
+	.headerContacts {
+		margin: 0;
+	}
+	.headerBurger {
+		top: 25px;
+	}
+}
+@media screen and (max-width: 525px) {
+	.headerNav {
+		flex-wrap: wrap;
+	}
+	.headerLocation {
+		width: 100%;
+		justify-content: center;
+	}
+	.headerContacts {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.headerLogo img {
+		width: 70px;
+	}
+	.headerNav {
+		margin-top: 40px;
+	}
+	.headerContacts {
+		margin-top: 10px;
+	}
+	.headerBurger {
+		top: 0;
+		right: 0;
+	}
+}

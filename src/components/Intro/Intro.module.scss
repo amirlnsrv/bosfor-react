@@ -1,0 +1,80 @@
+.intro {
+	background: url("public/Intro.webp") center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	min-height: 840px;
+}
+.introInner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.introInnerLeft {
+}
+.introInnerLeftTitle {
+	text-transform: uppercase;
+	color: #00054a;
+	font-size: 56px;
+	font-weight: 900;
+}
+.introInnerLeftTitle span {
+	color: #003185;
+	font-style: italic;
+	font-size: 124px;
+}
+.introInnerLeftSubtext {
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 35px;
+	color: #00054a;
+	margin-bottom: 20px;
+}
+.introInnerRight {
+	text-transform: uppercase;
+	color: #00054a;
+}
+.introInnerRightTitle {
+	font-size: 56px;
+	font-weight: 900;
+}
+
+@media screen and (max-width: 991px) {
+	.intro {
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(40, 16, 98, 0.85) 100%),
+			url("public/Intro.webp");
+		min-height: 680px;
+	}
+	.introInner {
+		margin-top: -150px;
+	}
+	.introInnerLeftTitle {
+		font-size: 48px;
+	}
+	.introInnerLeftTitle span {
+		font-size: 100px;
+	}
+	.introInnerLeftSubtext {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.introInnerRightTitle {
+		font-size: 48px;
+	}
+}
+@media screen and (max-width: 525px) {
+	.introInner {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+	.introInnerRight {
+		display: none;
+	}
+}
+@media screen and (max-width: 415px) {
+}

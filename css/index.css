@@ -1,0 +1,32 @@
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background-color: white;
+  color: #01c3f8;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {
+  padding-top: 25px;
+  position: relative;
+  z-index: 5;
+}
+
+.btn {
+  padding: 25px 35px;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #fff;
+  background-color: #2c2d2f;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #4aa716;
+}
