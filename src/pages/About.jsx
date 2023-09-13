@@ -1,10 +1,8 @@
 import React from "react";
+import Header from "../components/Header";
+import Burger from "../components/Burger";
 
-import Burger from "./components/Burger";
-import Header from "./components/Header";
-import Intro from "./components/Intro";
-
-function App() {
+function About() {
   const [visibleMenu, setVisibleMenu] = React.useState(false);
 
   return (
@@ -15,9 +13,8 @@ function App() {
         onClose={() => setVisibleMenu(false)}
       />
       <Header onClickMenu={() => setVisibleMenu(true)} />
-      <Intro />
     </>
   );
 }
 
-export default App;
+export default About;

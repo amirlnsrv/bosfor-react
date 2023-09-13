@@ -1,12 +1,11 @@
 import React from "react";
 
-import { BiPhone } from "react-icons/bi";
-import { CiLocationArrow1 } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Link } from "react-router-dom";
 
 import styles from "./Header.module.scss";
+import Contacts from "../../ui/Contacts";
 
 function Header({ onClickMenu }) {
   return (
@@ -25,29 +24,7 @@ function Header({ onClickMenu }) {
             </Link>
           </div>
           <nav className={styles.headerNav}>
-            <div className={styles.headerLocation}>
-              <div className={styles.headerLocationIco}>
-                <CiLocationArrow1 />
-              </div>
-              <p className={styles.headerLocationTitle}>
-                <a href="https://go.2gis.com/w9jax6" target="_blank">
-                  г. Бишкек, Кольбаева 30
-                </a>
-              </p>
-            </div>
-            <div className={styles.headerContacts}>
-              <div className={styles.headerContactsIco}>
-                <BiPhone />
-              </div>
-              <div className={styles.headerContactsItems}>
-                <p className={styles.headerContactsItem}>
-                  <a href="tel:+996709437350">+996(709)-43-73-50</a>
-                </p>
-                <p className={styles.headerContactsItem}>
-                  <a href="tel:+996701053601">+996(701)-05-36-01</a>
-                </p>
-              </div>
-            </div>
+            <Contacts />
             <div className={styles.headerBurger} onClick={onClickMenu}>
               <span>
                 <GiHamburgerMenu />

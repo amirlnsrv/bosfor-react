@@ -29,12 +29,12 @@ function Burger({ onClose, visibleMenu, setVisibleMenu }) {
               </Link>
             </li>
             <li className={styles.burgerItem}>
-              <Link to="/">
+              <Link to="/About">
                 <p className={styles.burgerItemLi}>О компании</p>
               </Link>
             </li>
             <li className={styles.burgerItem}>
-              <Link to="/">
+              <Link to="/Contacts">
                 <p className={styles.burgerItemLi}>Контакты</p>
               </Link>
             </li>

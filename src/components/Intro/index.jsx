@@ -1,11 +1,8 @@
 import React from "react";
-import ModalForm from "../../ui/ModalForm";
 
 import styles from "./Intro.module.scss";
 
-function Intro() {
-  const [visibleForm, setVisibleForm] = React.useState(false);
-
+function Intro({ setVisibleForm }) {
   const handlerOpenForm = () => {
     setVisibleForm(true);
   };
@@ -31,11 +28,10 @@ function Intro() {
           </div>
           <div className={styles.introInnerRight}>
             <h2 className={styles.introInnerRightTitle}>по бишкеку</h2>
-            <p className={styles.IntroInnerRightSubtitle}>Ключевая Вода</p>
+            <p className={styles.introInnerRightSubtitle}>Ключевая Вода</p>
           </div>
         </div>
       </div>
-      <ModalForm setVisibleForm={setVisibleForm} visibleForm={visibleForm} />
     </section>
   );
 }

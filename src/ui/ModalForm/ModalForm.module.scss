@@ -33,14 +33,14 @@
 	position: absolute;
 	font-size: 24px;
 	top: 10px;
-	right: 10px;
+	right: 15px;
 }
 .closeIco svg > path {
 	stroke: #000;
 }
 
 .modal {
-	padding: 10px 15px;
+	padding: 5px 30px 0;
 	border-radius: 25px;
 	width: 300px;
 	height: 400px;
@@ -53,7 +53,7 @@
 	line-height: normal;
 	margin-top: 30px;
 	font-size: 30px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #00054a;
 }
 
@@ -62,7 +62,6 @@
 	margin: 20px 0;
 	font-family: Montserrat, sans-serif;
 	font-size: 13px;
-	font-weight: 600;
 	color: #000;
 }
 
@@ -76,4 +75,6 @@
 	border-radius: 15px;
 	padding: 15px 30px;
 	margin: 5px 0;
+	font-size: 15px;
+	font-family: "Montserrat", sans-serif;
 }

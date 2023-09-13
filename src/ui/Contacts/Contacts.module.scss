@@ -1,0 +1,56 @@
+.contacts {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.headerLocation {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.headerLocationIco img {
+	background-color: #4aa716;
+	padding: 18.5px;
+	border-radius: 50%;
+}
+.headerLocationTitle {
+	font-weight: 900;
+	font-size: 18px;
+}
+.headerLocation a {
+	color: #01c3f8;
+}
+
+.headerContacts {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.headerContactsIco img {
+	background-color: #4aa716;
+	padding: 18px;
+	border-radius: 50%;
+}
+.headerContactsItem {
+	line-height: 1.3;
+	font-weight: 900;
+	font-size: 18px;
+}
+.headerContactsItem a {
+	color: #01c3f8;
+}
+
+@media screen and (max-width: 991px) {
+	.contacts {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contacts {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+}

@@ -1,0 +1,37 @@
+.products {
+	background-attachment: fixed;
+	background-image: linear-gradient(to bottom, #00064a 20%, rgba(40, 16, 98, 0.85) 60%), url("./products.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.productsTitle {
+	color: #fff;
+	font-size: 70px;
+	font-weight: 900;
+	margin-bottom: 50px;
+}
+.productsItems {
+	display: flex;
+	margin: 0 -25px;
+}
+
+@media screen and (max-width: 991px) {
+	.productsItems {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.productsTitle {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 525px) {
+	.productsTitle {
+		font-size: 45px;
+	}
+}
+@media screen and (max-width: 415px) {
+	.productsTitle {
+		font-size: 35px;
+	}
+}

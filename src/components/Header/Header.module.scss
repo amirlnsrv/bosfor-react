@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 20px;
 }
 .headerLogo {
 	display: flex;
@@ -30,45 +31,12 @@
 .headerNav {
 	display: flex;
 	align-items: center;
-}
-.headerLocation {
-	display: flex;
-	align-items: center;
-	font-size: 23px;
-}
-.headerLocationIco svg {
-	margin-right: 5px;
-	color: #2c2d2f;
-}
-.headerLocationTitle {
-	font-weight: 900;
-}
-.headerLocation a {
-	color: #01c3f8;
+	margin-right: 70px;
 }
 
-.headerContacts {
-	margin: 0 100px 0 40px;
-	position: relative;
-}
-.headerContactsIco svg {
-	color: #2c2d2f;
-	font-size: 23px;
-	position: absolute;
-	top: 16px;
-	margin-left: -25px;
-}
-.headerContactsItem {
-	line-height: 1.3;
-	font-weight: 900;
-	font-size: 23px;
-}
-.headerContactsItem a {
-	color: #01c3f8;
-}
 .headerBurger {
-	position: absolute;
-	right: 0;
+	position: fixed;
+	right: 30px;
 	padding: 11px 10px 5px;
 	border-radius: 250px;
 	font-size: 40px;
@@ -94,26 +62,15 @@
 		width: 100%;
 		margin-top: 20px;
 		justify-content: space-between;
-	}
-	.headerContacts {
-		margin: 0;
+		margin-right: 0;
 	}
 	.headerBurger {
-		top: 25px;
+		top: 45px;
 	}
 }
 @media screen and (max-width: 525px) {
 	.headerNav {
 		flex-wrap: wrap;
-	}
-	.headerLocation {
-		width: 100%;
-		justify-content: center;
-	}
-	.headerContacts {
-		width: 100%;
-		display: flex;
-		justify-content: center;
 	}
 }
 
@@ -124,11 +81,8 @@
 	.headerNav {
 		margin-top: 40px;
 	}
-	.headerContacts {
-		margin-top: 10px;
-	}
 	.headerBurger {
-		top: 0;
-		right: 0;
+		top: 30px;
+		right: 20px;
 	}
 }

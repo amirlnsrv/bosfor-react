@@ -1,5 +1,5 @@
 .intro {
-	background: url("public/Intro.webp") center no-repeat;
+	background: url("./intro.webp") center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -18,13 +18,13 @@
 .introInnerLeftTitle {
 	text-transform: uppercase;
 	color: #00054a;
-	font-size: 56px;
+	font-size: 4vw;
 	font-weight: 900;
 }
 .introInnerLeftTitle span {
 	color: #003185;
 	font-style: italic;
-	font-size: 124px;
+	font-size: 8vw;
 }
 .introInnerLeftSubtext {
 	font-family: Montserrat, sans-serif;
@@ -42,31 +42,39 @@
 	font-size: 56px;
 	font-weight: 900;
 }
+.introInnerRightSubtitle {
+	color: #44a40e;
+	font-size: 76.8px;
+	font-style: italic;
+	font-weight: 900;
+	line-height: normal;
+}
 
 @media screen and (max-width: 991px) {
 	.intro {
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(40, 16, 98, 0.85) 100%),
-			url("public/Intro.webp");
+			url("public/intro.webp");
 		min-height: 680px;
 	}
 	.introInner {
 		margin-top: -150px;
+		gap: 25px;
 	}
 	.introInnerLeftTitle {
-		font-size: 48px;
+		font-size: 70px;
 	}
 	.introInnerLeftTitle span {
-		font-size: 100px;
+		font-size: 120px;
 	}
 	.introInnerLeftSubtext {
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 19px;
+		line-height: 36px;
 	}
 	.introInnerRightTitle {
-		font-size: 48px;
+		font-size: 70px;
 	}
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 767px) {
 	.introInner {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -77,4 +85,14 @@
 	}
 }
 @media screen and (max-width: 415px) {
+	.introInnerLeftTitle {
+		font-size: 45px;
+	}
+	.introInnerLeftTitle span {
+		font-size: 70px;
+	}
+	.introInnerLeftSubtext {
+		margin-top: 20px;
+		line-height: 25px;
+	}
 }
