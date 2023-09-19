@@ -8,7 +8,7 @@ function ModalForm({ visibleForm, setVisibleForm, title }) {
   const { register, handleSubmit, reset } = useForm();
 
   function sendToWhatsapp(text) {
-    let url = `https://web.whatsapp.com/send?phone=996701053601&&text=${text}&source=&data=`;
+    let url = `https://wa.me/996701053601?text=${text}`;
     window.open(url);
   }
 
@@ -18,7 +18,6 @@ function ModalForm({ visibleForm, setVisibleForm, title }) {
 
   const onSubmit = (data) => {
     const clientData = `Меня зовут - ${data.name}, номер телефона - ${data.phone}`;
-    // sendToWhatsapp(JSON.stringify(data));
     sendToWhatsapp(
       "Здравствуйте хочу заказать воду! Перезвоните мне! " + clientData
     );
@@ -56,6 +55,7 @@ function ModalForm({ visibleForm, setVisibleForm, title }) {
               type="tel"
               placeholder="Телефон *"
               {...register("phone")}
+              required
               className={styles.modalFormInput}
             />
             <button className="btn btn-modal">Отправить заявку</button>
