@@ -2,6 +2,8 @@ import React from "react";
 
 import styles from "./Promo.module.scss";
 
+import promo from "../../assets/img/promo.webp";
+
 function Promo({ setVisibleForm }) {
   const handlerOpenForm = () => {
     setVisibleForm(true);
@@ -12,7 +14,7 @@ function Promo({ setVisibleForm }) {
       <div className="container">
         <div className={styles.promoInner}>
           <div className={styles.promoLeft}>
-            <img src="./promo.webp" alt="Акция" />
+            <img src={promo} alt="Акция" />
           </div>
           <div className={styles.promoRight}>
             <h2 className={styles.promoTitle}>Акция</h2>

@@ -2,6 +2,8 @@ import React from "react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import bosforLogo from "../../assets/img/bosforLogo.png";
+
 import { Link } from "react-router-dom";
 
 import styles from "./Header.module.scss";
@@ -13,7 +15,7 @@ function Header({ onClickMenu }) {
       <div className="container">
         <div className={styles.headerInner}>
           <div className={styles.headerLogo}>
-            <img src="./bosforLogo.png" alt="Logo" />
+            <img src={bosforLogo} alt="Logo" />
             <Link to="/">
               <div className={styles.headerLogoText}>
                 <p className={styles.headerLogoTitle}>осфор плюс</p>
