@@ -1,7 +1,7 @@
-import React from "react";
-
 import styles from "./Footer.module.scss";
 import Contacts from "../../ui/Contacts";
+
+import BtnUp from "../BtnUp";
 
 function Footer() {
   return (
@@ -11,7 +11,10 @@ function Footer() {
           <div className={styles.footerContacts}>
             <Contacts />
           </div>
-          Copyright &copy; 2009 - 2023 ОСОО «БОСФОР ПЛЮС»
+          <div className={styles.footerCopy}>
+            <p>Copyright &copy; 2023 ОСОО «БОСФОР ПЛЮС»</p>
+            <BtnUp />
+          </div>
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Products.module.scss";
 import Product from "../Product";
+import Title from "../Title";
 
 const products = [
   {
@@ -38,7 +39,7 @@ function Products({ setVisibleForm }) {
   return (
     <section className={styles.products}>
       <div className="container">
-        <h2 className={styles.productsTitle}>МЫ ПРЕДЛАГАЕМ</h2>
+        <Title title="МЫ ПРЕДЛАГАЕМ" />
         <div className={styles.productsItems}>
           {products.map((item) => (
             <Product

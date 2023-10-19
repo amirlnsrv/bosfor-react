@@ -1,0 +1,15 @@
+.btnUp {
+	display: flex;
+	width: 60px;
+	height: 60px;
+	padding: 17.5px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 250px;
+	border: 1px solid #fff;
+}
+
+button {
+	background: inherit;
+}

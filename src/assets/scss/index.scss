@@ -19,6 +19,16 @@ body {
   font-size: 18px;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin-bottom: auto;
+}
+
 .container {
   width: 100%;
   max-width: 1700px;

@@ -1,0 +1,23 @@
+.Title {
+	color: #fff;
+	font-size: 70px;
+	font-weight: 900;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) {
+	.Title {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 525px) {
+	.Title {
+		font-size: 45px;
+	}
+}
+@media screen and (max-width: 415px) {
+	.Title {
+		font-size: 35px;
+	}
+}

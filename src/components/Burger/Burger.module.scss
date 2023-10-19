@@ -8,7 +8,9 @@
 	z-index: 10;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+	transition:
+		opacity 0.1s ease-in-out,
+		visibility 0.1s ease-in-out;
 }
 
 .overlayVisible {
@@ -46,15 +48,16 @@
 }
 .burgerItem {
 	width: 100%;
-}
-.burgerItemLi {
 	padding: 20px 0 20px 30px;
 	font-weight: 800;
 	font-size: 22px;
 	color: #01c3f8;
-	transition: color, background-color 0.1s ease-in-out;
+	transition:
+		color,
+		background-color 0.1s ease-in-out;
 }
-.burgerItemLi:hover {
+
+.burgerItem:hover {
 	color: #fff;
 	background-color: #4aa716;
 }

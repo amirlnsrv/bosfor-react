@@ -13,7 +13,7 @@ function Main() {
   const [visibleForm, setVisibleForm] = React.useState(false);
 
   return (
-    <>
+    <div className="wrapper">
       <Burger
         setVisibleMenu={setVisibleMenu}
         visibleMenu={visibleMenu}
@@ -25,11 +25,13 @@ function Main() {
         visibleForm={visibleForm}
         title="Оставить заявку"
       />
-      <Intro setVisibleForm={setVisibleForm} />
-      <Products setVisibleForm={setVisibleForm} />
-      <Promo setVisibleForm={setVisibleForm} />
+      <main className="main">
+        <Intro setVisibleForm={setVisibleForm} />
+        <Products setVisibleForm={setVisibleForm} />
+        <Promo setVisibleForm={setVisibleForm} />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

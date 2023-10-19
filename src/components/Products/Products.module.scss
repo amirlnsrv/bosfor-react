@@ -6,12 +6,7 @@
 	background-position: center;
 	background-size: cover;
 }
-.productsTitle {
-	color: #fff;
-	font-size: 70px;
-	font-weight: 900;
-	margin-bottom: 50px;
-}
+
 .productsItems {
 	display: flex;
 	margin: 0 -25px;
@@ -21,18 +16,5 @@
 	.productsItems {
 		flex-wrap: wrap;
 		justify-content: center;
-	}
-	.productsTitle {
-		text-align: center;
-	}
-}
-@media screen and (max-width: 525px) {
-	.productsTitle {
-		font-size: 45px;
-	}
-}
-@media screen and (max-width: 415px) {
-	.productsTitle {
-		font-size: 35px;
 	}
 }

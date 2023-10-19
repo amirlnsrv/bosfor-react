@@ -7,8 +7,8 @@ import { store } from "./store/store.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Main from "./pages/Main.jsx";
-import About from "./pages/About.jsx";
-import Contacts from "./pages/Contacts.jsx";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
 
 import "./assets/scss/nullstyle.scss";
 import "./assets/scss/index.scss";

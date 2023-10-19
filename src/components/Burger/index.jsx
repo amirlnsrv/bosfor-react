@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Burger.module.scss";
 
 import { GrClose } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Burger({ onClose, visibleMenu, setVisibleMenu }) {
   const handlerCloseMenu = () => {
@@ -23,21 +23,15 @@ function Burger({ onClose, visibleMenu, setVisibleMenu }) {
             <GrClose />
           </div>
           <ul className={styles.burgerList}>
-            <li className={styles.burgerItem}>
-              <Link to="/">
-                <p className={styles.burgerItemLi}>Главная</p>
-              </Link>
-            </li>
-            <li className={styles.burgerItem}>
-              <Link to="/About">
-                <p className={styles.burgerItemLi}>О компании</p>
-              </Link>
-            </li>
-            <li className={styles.burgerItem}>
-              <Link to="/Contacts">
-                <p className={styles.burgerItemLi}>Контакты</p>
-              </Link>
-            </li>
+            <NavLink to="/">
+              <li className={styles.burgerItem}>Главная</li>
+            </NavLink>
+            <NavLink to="/About">
+              <li className={styles.burgerItem}>О компании</li>
+            </NavLink>
+            <NavLink to="/Contacts">
+              <li className={styles.burgerItem}>Контакты</li>
+            </NavLink>
           </ul>
         </div>
       </div>

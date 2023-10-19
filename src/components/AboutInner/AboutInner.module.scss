@@ -1,0 +1,37 @@
+.AboutInner {
+	margin-top: 88px;
+}
+
+.text p {
+	color: #ffff;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 32px;
+	margin-top: 50px;
+}
+
+.list li {
+	list-style-type: disc;
+	list-style-position: inside;
+	color: #ffff;
+	font-size: 20px;
+	font-family: Montserrat;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+@media screen and (max-width: 525px) {
+	.AboutInner {
+		margin-top: 55px;
+	}
+	.text p {
+		font-size: 16px;
+		line-height: 25px;
+		margin-top: 25px;
+	}
+	.list li {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}

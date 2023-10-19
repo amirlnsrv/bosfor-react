@@ -1,8 +1,5 @@
 import React from "react";
 
-import { BiPhone } from "react-icons/bi";
-import { CiLocationArrow1 } from "react-icons/ci";
-
 import location from "../../assets/img/location.svg";
 import phone from "../../assets/img/phone.svg";
 
@@ -13,7 +10,7 @@ function Contacts() {
     <div className={styles.contacts}>
       <div className={styles.headerLocation}>
         <div className={styles.headerLocationIco}>
-          <img src={location} alt="" />
+          <img src={location} alt="location" />
         </div>
         <p className={styles.headerLocationTitle}>
           <a href="https://go.2gis.com/w9jax6" target="_blank">
@@ -23,14 +20,14 @@ function Contacts() {
       </div>
       <div className={styles.headerContacts}>
         <div className={styles.headerContactsIco}>
-          <img src={phone} alt="" />
+          <img src={phone} alt="phone" />
         </div>
         <div className={styles.headerContactsItems}>
           <p className={styles.headerContactsItem}>
-            <a href="tel:+996709437350">+996(709)-43-73-50</a>
+            <a href="tel:+996709437350">+996 (552) 33-43-43</a>
           </p>
           <p className={styles.headerContactsItem}>
-            <a href="tel:+996701053601">+996(701)-05-36-01</a>
+            <a href="tel:+996701053601">+996 (504) 33-43-43</a>
           </p>
         </div>
       </div>
