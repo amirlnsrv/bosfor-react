@@ -1,4 +1,4 @@
-import Map2Gis from "../../ui/Map2Gis";
+import Map from "../../ui/Map";
 import Title from "../Title";
 import styles from "./ContactsInner.module.scss";
 
@@ -31,7 +31,7 @@ function ContactsInner() {
             </div>
           </div>
           <div className={styles.map}>
-            <Map2Gis />
+            <Map />
           </div>
         </div>
       </div>
